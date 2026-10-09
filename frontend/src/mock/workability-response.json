@@ -2,17 +2,20 @@
   "dataSource": "demo",
   "workabilityScore": 72,
   "condition": "MODERATE",
-  "recommendedWorkWindow": "17:00-20:00",
+  "recommendedWorkWindow": {
+    "start": "17:00",
+    "end": "20:00"
+  },
   "recommendedRouteId": "route-2",
   "environment": {
     "temperatureCelsius": 38.5,
     "aqi": 142,
-    "rainProbabilityPercent": 12
+    "rainRiskPercent": 12
   },
   "factors": {
-    "heat": 68,
-    "aqi": 55,
-    "rain": 12
+    "heatRisk": 68,
+    "aqiRisk": 55,
+    "rainRisk": 12
   },
   "routes": [
     {
