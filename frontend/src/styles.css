@@ -82,3 +82,37 @@ h1,h2,h3{margin:0}h2{font-size:1.15rem}h3{font-size:.95rem;margin-bottom:10px}
 @media(max-width:1000px){.top,.grid{grid-template-columns:1fr}.hero{grid-template-columns:1fr}.hero-art{height:150px}.map{height:380px}.navlinks{display:none}}
 @media(max-width:520px){.hero h1{font-size:1.6rem}.row{flex-direction:column}.score-body{flex-direction:column}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+.back{margin-bottom:12px;width:auto}
+.dash{margin-top:0}.back{margin-bottom:12px;width:auto}
+.dash{margin-top:0}
+html{scroll-behavior:smooth}
+
+/* menu buttons */
+.navlinks{display:flex;gap:6px;margin-left:24px;flex:1}
+.navbtn{background:transparent;border:0;border-radius:99px;padding:8px 16px;color:var(--mut);font:600 .9rem 'Plus Jakarta Sans',sans-serif;cursor:pointer;transition:background .15s,color .15s}
+.navbtn:hover{background:var(--g3);color:var(--g)}
+.navbtn.active{background:var(--g);color:#fff}
+.navbtn:focus-visible{outline:3px solid #8fd1ad;outline-offset:2px}
+
+/* inner pages */
+.info{margin-top:18px;padding:26px}
+.info h2{font-size:1.4rem;color:var(--g);margin-bottom:6px}
+.info .feats{margin:14px 0 20px}
+.info .btn{margin-top:6px}
+
+/* how it works steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0 8px}
+.stp{display:flex;flex-direction:column;gap:12px;border:1px solid var(--line);border-radius:12px;padding:18px;font-size:.9rem;background:#f9fcfa}
+.stp b{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--g);color:#fff;font-size:.95rem}
+
+/* worker types */
+.workers{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0 20px}
+.wk{display:flex;flex-direction:column;align-items:center;gap:8px;border:1px solid var(--line);border-radius:12px;padding:20px 10px;font-size:.9rem;text-align:center;background:#f9fcfa}
+.wk span{font-size:2rem}
+
+/* back button on results page */
+.back{margin-bottom:12px;width:auto}
+.dash{margin-top:0}
+
+@media(max-width:800px){.steps,.workers{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.navlinks{display:flex;overflow-x:auto;margin-left:0;order:3;width:100%}}
